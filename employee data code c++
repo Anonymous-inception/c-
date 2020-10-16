@@ -51,6 +51,27 @@ int main(){
    for(count=0; count < number_of_emp; count++){
       emp[count].display_emp_details(count+1);
    }
+   do{
+	cout<<"Press 1 to Display Employee Details"<<endl;
+	cout<<"Press 2 to Number of Employees"<<endl;
+	cout<<"Press 3 to Exit"<<endl;
+	cin>>choice;
+	switch(choice)
+   {
+   case 1:
+   	int number;
+	cout<<"Enter ID of employee:"<<endl;
+	cin>>number;
+	display_emp_details(number);
+	break;
+    case 2:
+    	cout<<"No. of employees in company:"<<number_of_emp;
+	break
+    case 3:
+    	break;
+   }
+   
+   }while(choice >3);
    cout<<"\nPress any key to close!!!";
    getch();
    return 0;
