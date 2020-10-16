@@ -36,6 +36,11 @@ class Employee
       cout<<"\n--------------------------\n";
    }
 };
+int max Salary()
+{
+	cout<<"Function In Maintenance";
+	return 0;
+}
 int main(){
    Employee emp[100];
    int number_of_emp, count;
@@ -54,7 +59,8 @@ int main(){
    do{
 	cout<<"Press 1 to Display Employee Details"<<endl;
 	cout<<"Press 2 to Number of Employees"<<endl;
-	cout<<"Press 3 to Exit"<<endl;
+	cout<<"Press 3 to Max Salary"<<endl;
+	cout<<"Press 4 to Exit"<<endl;
 	cin>>choice;
 	switch(choice)
    {
@@ -68,10 +74,15 @@ int main(){
     	cout<<"No. of employees in company:"<<number_of_emp;
 	break
     case 3:
+    	long int max;
+    	max = maxSalary();
+	cout<<"Max Salary:"<<max;
+    	break;
+    case 4:
     	break;
    }
    
-   }while(choice >3);
+   }while(choice >4);
    cout<<"\nPress any key to close!!!";
    getch();
    return 0;
